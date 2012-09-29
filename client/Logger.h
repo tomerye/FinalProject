@@ -19,7 +19,7 @@ class Logger
 public:
 	Logger(std::string loggerName);
 	~Logger();
-	void sendLog(Event *event);//send event to the server and file.
+	void sendLog(Event event);//send event to the server and file.
 
 private:
 	void log2File(Event event);

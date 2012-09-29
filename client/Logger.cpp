@@ -64,8 +64,8 @@ void Logger::log2Net()
 			}
 
 		}
-		Event *e=event_que.front();
-		std::cout << e->get();
+		Event e=event_que.front();
+		std::cout << e.get();
 		event_que.pop_front();
 		
 		count++;
